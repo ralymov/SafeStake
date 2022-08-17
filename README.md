@@ -63,6 +63,8 @@ SafeStake service provider contains several components:
 The duty agreement (using Hotstuff) among operators requires that these operators know IP of each other in a p2p network. Therefore, SafeSake provides a root node such that operators can consult and join the p2p network.
 
 #### Dependencies
+
+##### Server
  * Public Static Network IP 
  * Hardware(recommend)
    * CPU: 4
@@ -74,13 +76,19 @@ The duty agreement (using Hotstuff) among operators requires that these operator
    * Docker
    * Docker Compose 
 
+##### Set firewall rule
+| 	Port range   |      Protocol    |  Source |
+|----------|:-------------:|------:|
+|   22     |     TCP      |    0.0.0.0/0    |
+|   9000   |     UDP       |   0.0.0.0/0  |
+    
 
 ##### Installation
 
 Clone this repository:
 
 ```shell
-git clone --recurse-submodules https://github.com/ParaState/SafeStakeOperator
+git clone --recurse-submodules https://github.com/ParaState/SafeStakeOperator dvf
 cd dvf
 ```
 
