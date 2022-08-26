@@ -100,7 +100,7 @@ Install Docker and Docker Compose
 Build root node:
 
 ```shell
-sudo docker compose build -f docker-compose-boot.yml build
+sudo docker compose -f docker-compose-boot.yml build
 ```
 
 ##### Start Service
